@@ -1,15 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+  </head>
 
+  <body>
+    <div class="container w-50 card p-0">
+      <div class="card-header">
+        <h3>BT mảng</h3>
+      </div>
+      <form>
+        <label for="addNumber">Thêm giá trị cho mảng: </label>
+        <input id="addNumber" type="number" />
+    </form>
+    <button id="btnAddNumber" type="submit" class="btn btn-success">Thêm số</button>
+      <div class="py-4">
+        <span id="txtAddNumber"></span>
+      </div>
+      <div>
+        <button id="totalPositive" class="btn btn-success">Tổng số dương</button>  
+        <button id="countPositive" class="btn btn-success">Đếm số dương</button>
+        <button id="fintMin" class="btn btn-success">Tìm số nhỏ nhất</button>
+        <button id="findMinOfPositive" class="btn btn-success">Tìm số dương nhỏ nhất</button>
+        <button id="findLast" class="btn btn-success">Tìm số chẵn cuối cùng</button>
+        <button id="ascSort" class="btn btn-success">Sắp xếp tăng dần</button>
+        <button id="findPrime" class="btn btn-success">Tìm số nguyên tố đầu tiên</button>
+        <button id="duongAm" class="btn btn-success">So sánh dương âm</button>
+        <div class="py-2">
+            <input id="location1" type="Number" placeholder="Nhập ví trí thứ 1">
+            <button id="swap" class="btn btn-success">Đổi chỗ</button>
+            <input id="location2" type="Number" placeholder="Nhập ví trí thứ 2">
+        </div>
+        <div class="py-2">
+            <div>
+                <label for="numberInt">Mảng số thực: </label>
+                <input id="numberInt" type="number" placeholder="Nhập giá trị cho mảng đếm số nguyên">
+            </div>
+            <button id="addArray2" class="btn btn-success">Thêm số</button>
+            <p id="txtAddNumber2"></p>
+            <button id="countInt" class="btn btn-success">Đếm số nguyên</button>
+        </div>
+    </div>
+      <div>
+        <p id="txtTotalPositive">Tổng số dương: </p>
+        <p id="txtCoutPositive">Đếm số dương: </p>
+        <p id="txtFindMin">Tìm số nhỏ nhất: </p>
+        <p id="txtFindMinOfOisitive">Tìm số dương nhỏ nhất: </p>
+        <p id="txtFindLast">Tìm số chẵn cuối cùng: </p>
+        <p id="txtAscSort">Sắp xếp tăng dần: </p>
+        <p id="txtFindPrime">Tìm số nguyên tố đầu tiên: </p>
+        <p id="txtDuongAm">So sánh số lượng số dương và số âm: </p>
+        <p id="txtSwap">Đổi chỗ: </p>
+        <p id="txtCountInt">Đến số nguyên: </p>
+      </div>
+    </div>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
